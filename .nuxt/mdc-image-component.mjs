@@ -1,1 +1,0 @@
-export { default } from "/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"

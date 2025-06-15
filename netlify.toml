@@ -1,0 +1,13 @@
+[build]
+command = "npm run build"
+publish = ".output/public"
+functions = ".output/functions"
+
+[context.production.environment]
+NODE_VERSION = "18"
+NITRO_PRESET = "netlify"
+API_BASE_URL = "https://your-api-host.com"
+SITE_URL = "https://your-netlify-site.netlify.app"
+
+[[plugins]]
+package = "@netlify/plugin-functions-core"

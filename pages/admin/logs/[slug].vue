@@ -24,6 +24,5 @@
 <script setup lang="ts">
 const route = useRoute()
 const slug = route.params.slug
-const config = useRuntimeConfig()
-const { data: logs = [] } = await useFetch(`${config.public.apiBase}/logs/${slug}`)
+const { data: logs = [] } = await useFetch(`/logs/${slug}`)
 </script>
