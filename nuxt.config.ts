@@ -6,36 +6,9 @@ import it from './i18n/locales/it.json'
 
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-modules: [
-  '@vite-pwa/nuxt'
-],
 
-pwa: {
-  registerType: 'autoUpdate',
-  manifest: {
-    name: 'CalcHub',
-    short_name: 'CalcHub',
-    theme_color: '#ffffff',
-    background_color: '#ffffff',
-    display: 'standalone',
-    start_url: '/',
-    icons: [
-      {
-        src: '/icon-192.png',
-        sizes: '192x192',
-        type: 'image/png'
-      },
-      {
-        src: '/icon-512.png',
-        sizes: '512x512',
-        type: 'image/png'
-      }
-    ]
-  }
-},
-
-  devtools: { enabled: true },
   modules: [
+    '@vite-pwa/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
@@ -49,6 +22,32 @@ pwa: {
     'nitro-cloudflare-dev',
   ],
 
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'CalcHub',
+      short_name: 'CalcHub',
+      theme_color: '#ffffff',
+      background_color: '#ffffff',
+      display: 'standalone',
+      start_url: '/',
+      icons: [
+        {
+          src: '/icon-192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/icon-512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
+    }
+  },
+
+  devtools: { enabled: true },
+
   colorMode: {
     classSuffix: '',
     preference: 'system',
@@ -56,75 +55,23 @@ pwa: {
     storageKey: 'xanzhu-color-mode',
   },
 
-  // i18n V10
   i18n: {
     defaultLocale: 'en',
     messages: {
-        en: {
-          Finance: 'Finance',
-          Mathematics: 'Mathematics',
-          
-        },
-        fr: {
-          Finance: 'Finance',
-          Mathematics: 'Mathématiques',
-        
-    
-        },
-
-                it: {
-          Finance: 'Finanza',
-          Mathematics: 'Matematica',
-        
-    
-        },
-                    es: {
-          Finance: 'Finanza',
-          Mathematics: 'Matematica',
-        
-    
-        },
-
-      },
+      en: { Finance: 'Finance', Mathematics: 'Mathematics' },
+      fr: { Finance: 'Finance', Mathematics: 'Mathématiques' },
+      it: { Finance: 'Finanza', Mathematics: 'Matematica' },
+      es: { Finance: 'Finanza', Mathematics: 'Matematica' },
+    },
     lazy: false,
     strategy: 'prefix_except_default',
     locales: [
-      {
-        code: 'en',
-        language: 'en',
-        name: 'English',
-        file: 'en.json',
-      },
-      {
-        code: 'it',
-        language: 'it',
-        name: 'it',
-        file: 'it.json',
-      },
-      {
-        code: 'es',
-        language: 'es',
-        name: 'es',
-        file: 'es.json',
-      },
-      {
-        code: 'fr',
-        language: 'fr',
-        name: 'fr',
-        file: 'fr.json',
-      },
-      {
-        code: 'ko',
-        language: 'ko',
-        name: '한국어',
-        file: 'ko.json',
-      },
-      {
-        code: 'zh',
-        language: 'zh',
-        name: '中文',
-        file: 'zh.json',
-      },
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
+      { code: 'it', language: 'it', name: 'it', file: 'it.json' },
+      { code: 'es', language: 'es', name: 'es', file: 'es.json' },
+      { code: 'fr', language: 'fr', name: 'fr', file: 'fr.json' },
+      { code: 'ko', language: 'ko', name: '한국어', file: 'ko.json' },
+      { code: 'zh', language: 'zh', name: '中文', file: 'zh.json' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -158,16 +105,15 @@ pwa: {
 
   content: {
     defaultLocale: 'en',
+    documentDriven: true,
+    highlight: { theme: 'github-dark' },
   },
 
-
-  // ICON
   icon: {
     provider: 'iconify',
     mode: 'svg',
   },
 
-  // SECURITY V1.5
   security: {
     nonce: true,
     ssg: {
@@ -243,59 +189,44 @@ pwa: {
 
   compatibilityDate: '2025-05-15',
 
-  // Experimental Features
   experimental: {
-    // buildCache: true,
     headNext: true,
   },
+
   future: {
     compatibilityVersion: 4,
   },
 
-  // Testing features
   sourcemap: false,
 
   nitro: {
+    preset: 'node',
     future: {
       nativeSWR: false,
       crawlLinks: false,
       failOnError: false, 
     },
   },
-})
 
   ssr: true,
-  nitro: {
-    preset: 'node',
-  },
-  content: {
-    documentDriven: true,
-    highlight: { theme: 'github-dark' },
-  },
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.SITE_URL || 'https://www.calchub.xyz',
     }
   },
+
   seo: {
     enabled: true
   },
 
-
   app: {
     head: {
-
       title: () => {
         const { locale } = useI18n()
-        const route = useRoute()
         const page = useContent().data.value
         return page?.[locale]?.title || page?.title || 'CalcHub'
       },
-    },
-
-    head: {
-
-      
       meta: [
         {
           hid: 'description',
@@ -303,7 +234,9 @@ pwa: {
           content: () => {
             const { locale } = useI18n()
             const page = useContent().data.value
-
+            return page?.[locale]?.description || page?.description || ''
+          }
+        },
         {
           hid: 'og:image',
           property: 'og:image',
@@ -314,9 +247,6 @@ pwa: {
             const slug = useRoute().path.replace(/^\/(\w\w)?\/?/, '').replace(/\/$/, '').replace(/\//g, '-')
             const image = page?.ogImage || `/og-images/${slug}-${locale}.png`
             return image.startsWith('http') ? image : baseUrl + image
-          }
-        },
-            return page?.[locale]?.description || page?.description || ''
           }
         },
         {
@@ -338,53 +268,27 @@ pwa: {
           }
         }
       ],
-
-        {
-          hid: 'description',
-          name: 'description',
-          content: () => {
-            const { locale } = useI18n()
-            const route = useRoute()
-            const page = useContent().data.value
-            return page?.[locale]?.description || page?.description || ''
-          }
-        }
-      ],
-    },
-
-    head: {
-
       htmlAttrs: {
-        lang: useI18n().locale
+        lang: () => useI18n().locale
       },
       link: [
         {
           rel: 'alternate',
           hreflang: 'x-default',
-          href: `${useRuntimeConfig().public.siteUrl}${useRoute().path}`
+          href: () => `${useRuntimeConfig().public.siteUrl}${useRoute().path}`
         },
         ...(['en', 'es', 'fr', 'it', 'zh', 'ko'].map(lang => ({
           rel: 'alternate',
           hreflang: lang,
-          href: `${useRuntimeConfig().public.siteUrl}/${lang}${useRoute().path}`
-        })))
-      ],
-
-
-      link: [
+          href: () => `${useRuntimeConfig().public.siteUrl}/${lang}${useRoute().path}`
+        }))),
         {
           rel: 'alternate',
           type: 'application/rss+xml',
           href: '/rss.xml',
           title: 'RSS'
-        },
-        ...(['en', 'es', 'fr', 'it', 'zh', 'ko'].map(lang => ({
-          rel: 'alternate',
-          hreflang: lang,
-          href: `${useRuntimeConfig().public.siteUrl}/${lang}${useRoute().path}`
-        })))
+        }
       ],
-
       script: [
         {
           hid: 'ga4',
@@ -413,6 +317,5 @@ pwa: {
         'ga4-init': ['innerHTML']
       }
     }
-  },
-
-}
+  }
+});
