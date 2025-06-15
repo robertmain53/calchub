@@ -6,28 +6,28 @@ type Decorate<T extends Record<string, any>> = { [K in keyof T as K extends stri
 type InjectionType<A extends Plugin> = A extends {default: Plugin<infer T>} ? Decorate<T> : unknown
 
 type NuxtAppInjections = 
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/revive-payload.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/head/runtime/plugins/unhead.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/pages/runtime/plugins/router.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/runtime/app/plugins/0.siteConfig.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/payload.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.17.4_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@22.15.29_db0@0.3.2_e_cde47f14217be89b8d329cde39a6c4be/node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+icon@1.13.0_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4.2_terser@5.40_d9c1723f3008ddd0629c4c17ce0f725c/node_modules/@nuxt/icon/dist/runtime/plugin.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.3.5/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.3.5/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+content@2.13.4_@netlify+blobs@8.2.0_db0@0.3.2_ioredis@5.6.1_magicast@0.3.5_nuxt@3_d8407abf7a263b461b4d4d6c8c3cc3da/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/app/plugins/robot-meta.server.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/runtime/app/plugins/i18n.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.28.0_jiti@2.4.2__magicast@_b70af49aa072a3d672e5f1c4a591ff4c/node_modules/@nuxtjs/i18n/dist/runtime/plugins/switch-locale-path-ssr.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.28.0_jiti@2.4.2__magicast@_b70af49aa072a3d672e5f1c4a591ff4c/node_modules/@nuxtjs/i18n/dist/runtime/plugins/route-locale-detect.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.28.0_jiti@2.4.2__magicast@_b70af49aa072a3d672e5f1c4a591ff4c/node_modules/@nuxtjs/i18n/dist/runtime/plugins/i18n.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.client.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/plugins/unhead.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/router.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/app/plugins/0.siteConfig.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/payload.client.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxt/icon/dist/runtime/plugin.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/robots/dist/runtime/app/plugins/robot-meta.server.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/app/plugins/i18n.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/i18n/dist/runtime/plugins/switch-locale-path-ssr.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/i18n/dist/runtime/plugins/route-locale-detect.js")> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/i18n/dist/runtime/plugins/i18n.js")> &
   InjectionType<typeof import("../pwa-icons-plugin")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.28.0_jiti@2.4.2__magicast@_b70af49aa072a3d672e5f1c4a591ff4c/node_modules/@nuxtjs/i18n/dist/runtime/plugins/ssg-detect.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@vite-pwa+nuxt@1.0.4_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4.2_terser@5_a34d6984941fbb2e47c6af0aa92f2b30/node_modules/@vite-pwa/nuxt/dist/runtime/plugins/pwa.client.js")>
+  InjectionType<typeof import("../../node_modules/@nuxtjs/i18n/dist/runtime/plugins/ssg-detect.js")> &
+  InjectionType<typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/plugins/pwa.client.js")>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }

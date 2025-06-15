@@ -10,9 +10,9 @@ declare module '@nuxt/schema' {
      */
     ["i18n"]: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
-     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module`
+     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module`
      */
-    ["site"]: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    ["site"]: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
      * Configuration for `@nuxtjs/robots`
      */
@@ -72,9 +72,9 @@ declare module '@nuxt/schema' {
      */
     ["i18n"]?: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
-     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module`
+     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module`
      */
-    ["site"]?: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
      * Configuration for `@nuxtjs/robots`
      */
@@ -123,7 +123,7 @@ declare module '@nuxt/schema' {
      * Configuration for `@nuxt/telemetry`
      */
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["@nuxtjs/i18n", Exclude<NuxtConfig["i18n"], boolean>] | ["/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/robots", Exclude<NuxtConfig["robots"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@unocss/nuxt", Exclude<NuxtConfig["unocss"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["nuxt-security", Exclude<NuxtConfig["security"], boolean>] | ["@nuxt/fonts", Exclude<NuxtConfig["fonts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["@nuxtjs/i18n", Exclude<NuxtConfig["i18n"], boolean>] | ["/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/robots", Exclude<NuxtConfig["robots"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@unocss/nuxt", Exclude<NuxtConfig["unocss"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["nuxt-security", Exclude<NuxtConfig["security"], boolean>] | ["@nuxt/fonts", Exclude<NuxtConfig["fonts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
 }
 declare module 'nuxt/schema' {
@@ -139,10 +139,10 @@ declare module 'nuxt/schema' {
      */
     ["i18n"]: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
-     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module`
-     * @see https://www.npmjs.com/package//home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module
+     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package//home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module
      */
-    ["site"]: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    ["site"]: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
      * Configuration for `@nuxtjs/robots`
      * @see https://www.npmjs.com/package/@nuxtjs/robots
@@ -216,10 +216,10 @@ declare module 'nuxt/schema' {
      */
     ["i18n"]?: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
-     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module`
-     * @see https://www.npmjs.com/package//home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module
+     * Configuration for `/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package//home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module
      */
-    ["site"]?: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
      * Configuration for `@nuxtjs/robots`
      * @see https://www.npmjs.com/package/@nuxtjs/robots
@@ -280,7 +280,7 @@ declare module 'nuxt/schema' {
      * @see https://www.npmjs.com/package/@nuxt/telemetry
      */
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["@nuxtjs/i18n", Exclude<NuxtConfig["i18n"], boolean>] | ["/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-site-config@3.2.0_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/robots", Exclude<NuxtConfig["robots"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@unocss/nuxt", Exclude<NuxtConfig["unocss"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["nuxt-security", Exclude<NuxtConfig["security"], boolean>] | ["@nuxt/fonts", Exclude<NuxtConfig["fonts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["@nuxtjs/i18n", Exclude<NuxtConfig["i18n"], boolean>] | ["/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/robots", Exclude<NuxtConfig["robots"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@unocss/nuxt", Exclude<NuxtConfig["unocss"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["nuxt-security", Exclude<NuxtConfig["security"], boolean>] | ["@nuxt/fonts", Exclude<NuxtConfig["fonts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {

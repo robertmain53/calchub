@@ -2,27 +2,27 @@
 
 declare module 'nitropack' {
   interface PrerenderRoute {
-    _sitemap?: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapUrl
+    _sitemap?: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapUrl
   }
   interface NitroRouteRules {
     index?: boolean
-    sitemap?: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
+    sitemap?: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
   }
   interface NitroRouteConfig {
     index?: boolean
-    sitemap?: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
+    sitemap?: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
   }
   interface NitroRuntimeHooks {
-    'sitemap:index-resolved': (ctx: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapIndexRenderCtx) => void | Promise<void>
-    'sitemap:input': (ctx: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapInputCtx) => void | Promise<void>
-    'sitemap:resolved': (ctx: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapRenderCtx) => void | Promise<void>
-    'sitemap:output': (ctx: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapOutputHookCtx) => void | Promise<void>
-    'sitemap:sources': (ctx: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapSourcesHookCtx) => void | Promise<void>
+    'sitemap:index-resolved': (ctx: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapIndexRenderCtx) => void | Promise<void>
+    'sitemap:input': (ctx: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapInputCtx) => void | Promise<void>
+    'sitemap:resolved': (ctx: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapRenderCtx) => void | Promise<void>
+    'sitemap:output': (ctx: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapOutputHookCtx) => void | Promise<void>
+    'sitemap:sources': (ctx: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapSourcesHookCtx) => void | Promise<void>
   }
 }
 declare module 'vue-router' {
     interface RouteMeta {
-        sitemap?: import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.3.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@22.15.29_jiti@2.4_77e76d4f9f4228e1ac58058322e2802b/node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
+        sitemap?: import('../../node_modules/@nuxtjs/sitemap/runtime/types').SitemapItemDefaults
     }
 }
 

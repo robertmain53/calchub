@@ -1,4 +1,4 @@
 declare module '#content/server' {
-  const serverQueryContent: typeof import('/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxt+content@2.13.4_@netlify+blobs@8.2.0_db0@0.3.2_ioredis@5.6.1_magicast@0.3.5_nuxt@3_d8407abf7a263b461b4d4d6c8c3cc3da/node_modules/@nuxt/content/dist/runtime/legacy/types').serverQueryContent
-  const parseContent: typeof import('/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxt+content@2.13.4_@netlify+blobs@8.2.0_db0@0.3.2_ioredis@5.6.1_magicast@0.3.5_nuxt@3_d8407abf7a263b461b4d4d6c8c3cc3da/node_modules/@nuxt/content/dist/runtime/server').parseContent
+  const serverQueryContent: typeof import('/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxt/content/dist/runtime/legacy/types').serverQueryContent
+  const parseContent: typeof import('/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxt/content/dist/runtime/server').parseContent
 }
