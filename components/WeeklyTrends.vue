@@ -21,5 +21,6 @@
 </template>
 
 <script setup>
-const { data: report } = await useFetch('/analytics/weekly-report.json')
+const config = useRuntimeConfig()
+const { data: report } = await useFetch(`${config.public.apiBase}/analytics/weekly-report.json`)
 </script>

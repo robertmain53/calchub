@@ -16,8 +16,10 @@
 </template>
 
 <script setup>
-const { data } = await useFetch('/analytics/mock.json')
+const config = useRuntimeConfig()
+const { data } = await useFetch(`${config.public.apiBase}/analytics/mock.json`)
 const lang = useRoute().params.lang || 'en'
+
 
 const totals = {}
 
