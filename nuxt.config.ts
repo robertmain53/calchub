@@ -252,9 +252,11 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.SITE_URL || 'https://socalisolver.com',
+      siteUrl: process.env.SITE_URL || 'https://socalsolver.com',
+      apiBase: process.env.API_BASE_URL
     }
   },
+
   seo: {
     enabled: true,
   },
@@ -289,11 +291,5 @@ export default defineNuxtConfig({
         'ga4-init': ['innerHTML']
       }
     }
-  },
-
-  runtimeConfig: {
-    public: {
-      siteUrl: process.env.SITE_URL || 'https://socalsolver.com',
-      apiBase: process.env.API_BASE_URL
-    }
+  }
 });

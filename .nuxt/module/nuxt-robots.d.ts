@@ -3,7 +3,7 @@
 declare module 'nitropack' {
   interface NitroApp {
     _robots: {
-      ctx: import('../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsConfigContext
+      ctx: import('../../node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsConfigContext
       nuxtContentUrls?: Set<string>
     },
     _robotsRuleMactcher: (url: string) => string
@@ -21,8 +21,8 @@ declare module 'nitropack' {
     }
   }
   interface NitroRuntimeHooks {
-    'robots:config': (ctx: import('../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsConfigContext) => void | Promise<void>
-    'robots:robots-txt': (ctx: import('../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsTxtContext) => void | Promise<void>
+    'robots:config': (ctx: import('../../node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsConfigContext) => void | Promise<void>
+    'robots:robots-txt': (ctx: import('../../node_modules/@nuxtjs/robots/dist/runtime/types').HookRobotsTxtContext) => void | Promise<void>
   }
 }
 declare module 'h3' {

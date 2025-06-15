@@ -1,1 +1,1 @@
-export { default } from "/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxt+image@1.10.0_@netlify+blobs@8.2.0_db0@0.3.2_ioredis@5.6.1_magicast@0.3.5/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"
+export { default } from "/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"
