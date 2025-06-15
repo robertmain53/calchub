@@ -164,13 +164,13 @@ export default defineNuxtConfig({
     },
     headers: {
       contentSecurityPolicy: {
-        'default-src': ['\'self\'', 'https://*.xanzhu.com'],
+        'default-src': ['\'self\'', 'https://*.socalisolver.com'],
         'script-src': [
           '\'self\'',
           '\'strict-dynamic\'',
           '\'nonce-{{nonce}}\'',
           '\'unsafe-inline\'',
-          'https://*.xanzhu.com',
+          'https://*.socalisolver.com',
         ],
         'style-src': ['\'self\'', '\'unsafe-inline\''],
         'base-uri': '\'none\'',
@@ -196,7 +196,7 @@ export default defineNuxtConfig({
         'script-src-attr': ['\'none\''],
         'connect-src': [
           '\'self\'',
-          'https://*.xanzhu.com',
+          'https://*.socalisolver.com',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
           ...(process.env.NODE_ENV === 'development'
@@ -252,7 +252,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.SITE_URL || 'https://www.calchub.xyz',
+      siteUrl: process.env.SITE_URL || 'https://socalisolver.com',
     }
   },
   seo: {
@@ -290,4 +290,10 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.SITE_URL || 'https://socalsolver.com',
+      apiBase: process.env.API_BASE_URL
+    }
 });
