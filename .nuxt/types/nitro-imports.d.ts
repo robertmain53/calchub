@@ -1,13 +1,13 @@
 declare global {
-  const __buildAssetsURL: typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/utils/paths')['buildAssetsURL']
-  const __publicAssetsURL: typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/utils/paths')['publicAssetsURL']
+  const __buildAssetsURL: typeof import('../../node_modules/.pnpm/nuxt@3.17.5_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@24.0.1_db0@0.3.2_esl_aa5b679914566240c17cedc4c2d96834/node_modules/nuxt/dist/core/runtime/nitro/utils/paths')['buildAssetsURL']
+  const __publicAssetsURL: typeof import('../../node_modules/.pnpm/nuxt@3.17.5_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@24.0.1_db0@0.3.2_esl_aa5b679914566240c17cedc4c2d96834/node_modules/nuxt/dist/core/runtime/nitro/utils/paths')['publicAssetsURL']
   const appendCorsHeaders: typeof import('../../node_modules/h3')['appendCorsHeaders']
   const appendCorsPreflightHeaders: typeof import('../../node_modules/h3')['appendCorsPreflightHeaders']
   const appendHeader: typeof import('../../node_modules/h3')['appendHeader']
   const appendHeaders: typeof import('../../node_modules/h3')['appendHeaders']
   const appendResponseHeader: typeof import('../../node_modules/h3')['appendResponseHeader']
   const appendResponseHeaders: typeof import('../../node_modules/h3')['appendResponseHeaders']
-  const asSitemapUrl: typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/asSitemapUrl')['asSitemapUrl']
+  const asSitemapUrl: typeof import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.4.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@24.0.1_jiti@2.4.2_4d01b957d3a85bae1f9442bd7e1d82d8/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/asSitemapUrl')['asSitemapUrl']
   const assertMethod: typeof import('../../node_modules/h3')['assertMethod']
   const cachedEventHandler: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache')['cachedEventHandler']
   const cachedFunction: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache')['cachedFunction']
@@ -22,13 +22,13 @@ declare global {
   const createRouter: typeof import('../../node_modules/h3')['createRouter']
   const createSitePathResolver: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/utils')['createSitePathResolver']
   const defaultContentType: typeof import('../../node_modules/h3')['defaultContentType']
-  const defineAppConfig: typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/utils/config')['defineAppConfig']
+  const defineAppConfig: typeof import('../../node_modules/.pnpm/nuxt@3.17.5_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@24.0.1_db0@0.3.2_esl_aa5b679914566240c17cedc4c2d96834/node_modules/nuxt/dist/core/runtime/nitro/utils/config')['defineAppConfig']
   const defineCachedEventHandler: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache')['defineCachedEventHandler']
   const defineCachedFunction: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache')['defineCachedFunction']
   const defineEventHandler: typeof import('../../node_modules/h3')['defineEventHandler']
-  const defineI18nConfig: typeof import('../../node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nConfig']
-  const defineI18nLocale: typeof import('../../node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nLocale']
-  const defineI18nLocaleDetector: typeof import('../../node_modules/@nuxtjs/i18n/dist/runtime/composables/server')['defineI18nLocaleDetector']
+  const defineI18nConfig: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.29.0_jiti@2.4.2__magicast@_856cbbbd3701fd5d5b425c20ea94ac34/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nConfig']
+  const defineI18nLocale: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.29.0_jiti@2.4.2__magicast@_856cbbbd3701fd5d5b425c20ea94ac34/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nLocale']
+  const defineI18nLocaleDetector: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.29.0_jiti@2.4.2__magicast@_856cbbbd3701fd5d5b425c20ea94ac34/node_modules/@nuxtjs/i18n/dist/runtime/composables/server')['defineI18nLocaleDetector']
   const defineLazyEventHandler: typeof import('../../node_modules/h3')['defineLazyEventHandler']
   const defineNitroErrorHandler: typeof import('../../node_modules/nitropack/dist/runtime/internal/error/utils')['defineNitroErrorHandler']
   const defineNitroPlugin: typeof import('../../node_modules/nitropack/dist/runtime/internal/plugin')['defineNitroPlugin']
@@ -38,11 +38,11 @@ declare global {
   const defineRequestMiddleware: typeof import('../../node_modules/h3')['defineRequestMiddleware']
   const defineResponseMiddleware: typeof import('../../node_modules/h3')['defineResponseMiddleware']
   const defineRouteMeta: typeof import('../../node_modules/nitropack/dist/runtime/internal/meta')['defineRouteMeta']
-  const defineSitemapEventHandler: typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/defineSitemapEventHandler')['defineSitemapEventHandler']
+  const defineSitemapEventHandler: typeof import('../../node_modules/.pnpm/@nuxtjs+sitemap@7.4.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@24.0.1_jiti@2.4.2_4d01b957d3a85bae1f9442bd7e1d82d8/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/defineSitemapEventHandler')['defineSitemapEventHandler']
   const defineTask: typeof import('../../node_modules/nitropack/dist/runtime/internal/task')['defineTask']
   const defineWebSocket: typeof import('../../node_modules/h3')['defineWebSocket']
   const defineWebSocketHandler: typeof import('../../node_modules/h3')['defineWebSocketHandler']
-  const defuReplaceArray: typeof import('../../node_modules/nuxt-security/dist/utils/merge')['defuReplaceArray']
+  const defuReplaceArray: typeof import('../../node_modules/.pnpm/nuxt-security@2.2.0_magicast@0.3.5_rollup@4.43.0/node_modules/nuxt-security/dist/utils/merge')['defuReplaceArray']
   const deleteCookie: typeof import('../../node_modules/h3')['deleteCookie']
   const dynamicEventHandler: typeof import('../../node_modules/h3')['dynamicEventHandler']
   const eventHandler: typeof import('../../node_modules/h3')['eventHandler']
@@ -60,7 +60,7 @@ declare global {
   const getHeaders: typeof import('../../node_modules/h3')['getHeaders']
   const getMethod: typeof import('../../node_modules/h3')['getMethod']
   const getPathLocale: typeof import('../../node_modules/@intlify/utils/dist/h3')['getPathLocale']
-  const getPathRobotConfig: typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/server/composables/getPathRobotConfig')['getPathRobotConfig']
+  const getPathRobotConfig: typeof import('../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getPathRobotConfig')['getPathRobotConfig']
   const getProxyRequestHeaders: typeof import('../../node_modules/h3')['getProxyRequestHeaders']
   const getQuery: typeof import('../../node_modules/h3')['getQuery']
   const getQueryLocale: typeof import('../../node_modules/@intlify/utils/dist/h3')['getQueryLocale']
@@ -82,7 +82,7 @@ declare global {
   const getRouterParams: typeof import('../../node_modules/h3')['getRouterParams']
   const getSession: typeof import('../../node_modules/h3')['getSession']
   const getSiteIndexable: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteIndexable')['getSiteIndexable']
-  const getSiteRobotConfig: typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/server/composables/getSiteRobotConfig')['getSiteRobotConfig']
+  const getSiteRobotConfig: typeof import('../../node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getSiteRobotConfig')['getSiteRobotConfig']
   const getValidatedQuery: typeof import('../../node_modules/h3')['getValidatedQuery']
   const getValidatedRouterParams: typeof import('../../node_modules/h3')['getValidatedRouterParams']
   const handleCacheHeaders: typeof import('../../node_modules/h3')['handleCacheHeaders']
@@ -167,20 +167,20 @@ export { useEvent } from 'nitropack/runtime/internal/context';
 export { defineTask, runTask } from 'nitropack/runtime/internal/task';
 export { defineNitroErrorHandler } from 'nitropack/runtime/internal/error/utils';
 export { appendCorsHeaders, appendCorsPreflightHeaders, appendHeader, appendHeaders, appendResponseHeader, appendResponseHeaders, assertMethod, callNodeListener, clearResponseHeaders, clearSession, createApp, createAppEventHandler, createError, createEvent, createEventStream, createRouter, defaultContentType, defineEventHandler, defineLazyEventHandler, defineNodeListener, defineNodeMiddleware, defineRequestMiddleware, defineResponseMiddleware, defineWebSocket, defineWebSocketHandler, deleteCookie, dynamicEventHandler, eventHandler, fetchWithEvent, fromNodeMiddleware, fromPlainHandler, fromWebHandler, getCookie, getHeader, getHeaders, getMethod, getProxyRequestHeaders, getQuery, getRequestFingerprint, getRequestHeader, getRequestHeaders, getRequestHost, getRequestIP, getRequestPath, getRequestProtocol, getRequestURL, getRequestWebStream, getResponseHeader, getResponseHeaders, getResponseStatus, getResponseStatusText, getRouterParam, getRouterParams, getSession, getValidatedQuery, getValidatedRouterParams, handleCacheHeaders, handleCors, isCorsOriginAllowed, isError, isEvent, isEventHandler, isMethod, isPreflightRequest, isStream, isWebResponse, lazyEventHandler, parseCookies, promisifyNodeListener, proxyRequest, readBody, readFormData, readMultipartFormData, readRawBody, readValidatedBody, removeResponseHeader, sanitizeStatusCode, sanitizeStatusMessage, sealSession, send, sendError, sendIterable, sendNoContent, sendProxy, sendRedirect, sendStream, sendWebResponse, serveStatic, setCookie, setHeader, setHeaders, setResponseHeader, setResponseHeaders, setResponseStatus, splitCookiesString, toEventHandler, toNodeListener, toPlainHandler, toWebHandler, toWebRequest, unsealSession, updateSession, useBase, useSession, writeEarlyHints } from 'h3';
-export { buildAssetsURL as __buildAssetsURL, publicAssetsURL as __publicAssetsURL } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt/dist/core/runtime/nitro/utils/paths';
-export { defineAppConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt/dist/core/runtime/nitro/utils/config';
-export { defineSitemapEventHandler } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/defineSitemapEventHandler';
-export { asSitemapUrl } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/asSitemapUrl';
+export { buildAssetsURL as __buildAssetsURL, publicAssetsURL as __publicAssetsURL } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt@3.17.5_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@24.0.1_db0@0.3.2_esl_aa5b679914566240c17cedc4c2d96834/node_modules/nuxt/dist/core/runtime/nitro/utils/paths';
+export { defineAppConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt@3.17.5_@netlify+blobs@8.2.0_@parcel+watcher@2.5.1_@types+node@24.0.1_db0@0.3.2_esl_aa5b679914566240c17cedc4c2d96834/node_modules/nuxt/dist/core/runtime/nitro/utils/config';
+export { defineSitemapEventHandler } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+sitemap@7.4.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@24.0.1_jiti@2.4.2_4d01b957d3a85bae1f9442bd7e1d82d8/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/defineSitemapEventHandler';
+export { asSitemapUrl } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+sitemap@7.4.0_h3@1.15.3_magicast@0.3.5_vite@6.3.5_@types+node@24.0.1_jiti@2.4.2_4d01b957d3a85bae1f9442bd7e1d82d8/node_modules/@nuxtjs/sitemap/dist/runtime/server/composables/asSitemapUrl';
 export { parseMarkdown } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/mdc/dist/runtime/parser';
-export { defuReplaceArray } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-security/dist/utils/merge';
-export { defineI18nLocale, defineI18nConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared';
+export { defuReplaceArray } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/nuxt-security@2.2.0_magicast@0.3.5_rollup@4.43.0/node_modules/nuxt-security/dist/utils/merge';
+export { defineI18nLocale, defineI18nConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.29.0_jiti@2.4.2__magicast@_856cbbbd3701fd5d5b425c20ea94ac34/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared';
 export { getCookieLocale, getHeaderLanguage, getHeaderLanguages, getHeaderLocale, getHeaderLocales, getPathLocale, getQueryLocale, setCookieLocale, tryCookieLocale, tryHeaderLocale, tryHeaderLocales, tryPathLocale, tryQueryLocale } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@intlify/utils/dist/h3';
-export { defineI18nLocaleDetector } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/i18n/dist/runtime/composables/server';
+export { defineI18nLocaleDetector } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+i18n@10.0.0-beta.3_@vue+compiler-dom@3.5.16_eslint@9.29.0_jiti@2.4.2__magicast@_856cbbbd3701fd5d5b425c20ea94ac34/node_modules/@nuxtjs/i18n/dist/runtime/composables/server';
 export { getSiteIndexable } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteIndexable';
 export { updateSiteConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/runtime/server/composables/updateSiteConfig';
 export { useNitroOrigin } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/runtime/server/composables/useNitroOrigin';
 export { useSiteConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/runtime/server/composables/useSiteConfig';
 export { createSitePathResolver, withSiteTrailingSlash, withSiteUrl } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/nuxt-site-config/dist/runtime/server/composables/utils';
-export { getPathRobotConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getPathRobotConfig';
-export { getSiteRobotConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getSiteRobotConfig';
+export { getPathRobotConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getPathRobotConfig';
+export { getSiteRobotConfig } from '/home/yeahupsrl/socalsolver.com/calchub/node_modules/.pnpm/@nuxtjs+robots@5.2.10_magicast@0.3.5_vue@3.5.16_typescript@5.8.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/getSiteRobotConfig';
 export { requireAuth } from '/home/yeahupsrl/socalsolver.com/calchub/server/utils/requireAuth';
